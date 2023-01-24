@@ -1,11 +1,34 @@
 import React from 'react';
-import { Logo } from '../../assets/svgs/logo';
-import { NavbarWrapper } from './style';
+import { Logo } from '../../assets/svgs/logo/logo';
+import {
+    NavbarContainer,
+    NavbarLink,
+    NavbarListItem,
+    NavbarUnorderedList,
+    NavbarWrapper,
+} from './style';
 
 function Navbar() {
     return (
         <NavbarWrapper>
-            <Logo size={300} />
+            <NavbarContainer>
+                <Logo size={300} />
+
+                <NavbarUnorderedList>
+                    <NavbarListItem>
+                        <NavbarLink>Home</NavbarLink>
+                    </NavbarListItem>
+                    <NavbarListItem>
+                        <NavbarLink>About</NavbarLink>
+                    </NavbarListItem>
+                    <NavbarListItem>
+                        <NavbarLink>Home</NavbarLink>
+                    </NavbarListItem>
+                    <NavbarListItem>
+                        <NavbarLink>Home</NavbarLink>
+                    </NavbarListItem>
+                </NavbarUnorderedList>
+            </NavbarContainer>
         </NavbarWrapper>
     );
 }

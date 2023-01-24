@@ -11,6 +11,8 @@ function MainRouter() {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    {/* <Route path="/About" element={} />
+                    <Route path="/About" element={} /> */}
                 </Routes>
             </Background>
         </Router>
